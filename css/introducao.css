@@ -1,0 +1,54 @@
+.introducao {
+  padding: 40px 20px;
+  margin: 0px auto;
+  max-width: 1200px;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  line-height: 1.125;
+  color: #525252;
+}
+
+.introducao h1::before {
+  content: "";
+  width: 130px;
+  height: 100px;
+  background: url(../img/detalhe.svg) no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -45px;
+  z-index: -1;
+}
+
+@media (max-width: 1400px) { 
+  .introducao h1::before {
+    width: 30px;
+    height: 10px;
+    top: -15px;
+    left: 5px;
+  }
+}
+
+@media (max-width: 900px) { 
+  .introducao h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 600px) { 
+  .introducao h1 {
+    font-size: 3rem;
+  }
+
+  .introducao p {
+    font-size: 1.25rem;
+  }
+}
