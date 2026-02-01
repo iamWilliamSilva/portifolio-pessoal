@@ -36,6 +36,18 @@
   color: #8f8f8f;
 }
 
+.footer-contato li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-contato li img {
+  width: 30px;
+  height: auto;
+}
+
+
 @media (max-width: 900px) {
   .footer-container {
     grid-template-columns: 1fr;
